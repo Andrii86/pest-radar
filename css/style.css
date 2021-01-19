@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "SF Compact Display";
+    src: url("../fonts/SFCompactDisplay-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+body {
+    font-family: "SF Compact Display", sans-serif;
+}
+
+main {
+    padding: 76px 20px 20px 280px;
+}
+
+.main-table {
+
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.main-table tr {
+    height: 50px;
+}
+
+.main-table th,
+.main-table td {
+
+    padding: 5px;
+    text-align: left;
+    font-weight: 400;
+    color: #1f3b51;
+
+}
+
+.main-table tbody tr:nth-child(2n) {
+
+    background-color: #eef4f8;
+}
+
+.main-table thead tr {
+
+    background-color: #eef4f8;
+    color: #1f3b51;
+    letter-spacing: -0.8px;
+
+}
+
+.main-table tr> :nth-child(1) {
+    min-width: 30px;
+    width: 3%;
+    text-align: center;
+}
+
+.main-table tr> :nth-child(2) {
+    width: 17%;
+}
+
+.main-table tr :nth-child(3) {
+    width: 17%;
+}
+
+.main-table tr> :nth-child(4) {
+    width: 10%;
+    text-align: center;
+}
+
+.main-table tr> :nth-child(5) {
+    width: 10%;
+}
+
+.main-table tr> :nth-child(6) {
+    width: 12%;
+}
+
+.main-table tr> :nth-child(7) {
+    width: 31%;
+}
+
+.tag {
+    padding: 5px 13px;
+    margin: 0 15px 0 0;
+    border-radius: 2px;
+    background-color: #1f3b51;
+    opacity: 0.67;
+    letter-spacing: -0.8px;
+    color: #ffffff;
+}
+.alarm{
+    padding: 5px 13px;
+    margin: 0 15px 0 0;
+    border-radius: 2px;
+    background-color: #e02020;
+    opacity: 0.67;
+    letter-spacing: -0.8px;
+    color: #ffffff;
+}
+
+.filter {
+    padding: 0px 0px 3px 12px;
+    cursor: pointer;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    padding: 2px 0;
+}
+
+.button-export {
+    position: absolute;
+    right: 36px;
+    bottom: 0;
+    height: 32px;
+    width: 120px;
+    border-radius: 2px;
+    border: none;
+    background-color: #1549eb;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button-export:focus {
+    outline: none;
+}
+.page{
+	font-size: 14px;
+	font-weight: 400;
+	color: #697c8a;
+}
+
+.pages-button {
+	background-color: #ffffff;
+	border: transparent;
+    color: #697c8a;
+    cursor: pointer;
+    padding: 6px 10px;
+}
+
+.pages-button img {
+	height: 10px;
+    width: 10px;
+}
+
+.active-page {
+	border-radius: 2px;
+	background-color: #697c8a;
+	border-color: transparent;
+	color: #ffffff
+}
+
+.table-options{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	padding: 44px 156px 0 0;
+}
