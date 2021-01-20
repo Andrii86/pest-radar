@@ -1,2 +1,2 @@
 # pest-radar
-This is the final task of greatest courses ever made by humans.
+This is one of the final tasks of greatest courses ever made by humans.
