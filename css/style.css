@@ -94,7 +94,8 @@ main {
     letter-spacing: -0.8px;
     color: #ffffff;
 }
-.alarm{
+
+.alarm {
     padding: 5px 13px;
     margin: 0 15px 0 0;
     border-radius: 2px;
@@ -135,36 +136,37 @@ main {
 .button-export:focus {
     outline: none;
 }
-.page{
-	font-size: 14px;
-	font-weight: 400;
-	color: #697c8a;
+
+.page {
+    font-size: 14px;
+    font-weight: 400;
+    color: #697c8a;
 }
 
 .pages-button {
-	background-color: #ffffff;
-	border: transparent;
+    background-color: #ffffff;
+    border: transparent;
     color: #697c8a;
     cursor: pointer;
     padding: 6px 10px;
 }
 
 .pages-button img {
-	height: 10px;
+    height: 10px;
     width: 10px;
 }
 
 .active-page {
-	border-radius: 2px;
-	background-color: #697c8a;
-	border-color: transparent;
-	color: #ffffff
+    border-radius: 2px;
+    background-color: #697c8a;
+    border-color: transparent;
+    color: #ffffff
 }
 
-.table-options{
+.table-options {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-	padding: 44px 156px 0 0;
+    padding: 44px 156px 0 0;
 }
