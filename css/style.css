@@ -14,12 +14,19 @@ body {
 
 body {
     font-family: "SF Compact Display", sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-main {
-    padding: 76px 20px 20px 280px;
+.lineout {
+    display: flex;
 }
+.content{
+    padding: 20px;
+    width: 100%;
 
+}
 .main-table {
 
     width: 100%;
@@ -94,19 +101,24 @@ main {
     letter-spacing: -0.8px;
     color: #ffffff;
 }
-.alarm{
-    padding: 5px 13px;
-    margin: 0 15px 0 0;
-    border-radius: 2px;
+.tag--alarm{
     background-color: #e02020;
-    opacity: 0.67;
-    letter-spacing: -0.8px;
-    color: #ffffff;
+    opacity: 1;
 }
 
+
 .filter {
-    padding: 0px 0px 3px 12px;
+    padding:  0 12px;
     cursor: pointer;
+}
+.filter:hover{
+    transform: scale(1.2);
+}
+.filter--active{
+    transform:rotate(180deg);
+}
+.filter--active:hover{
+    transform:scale(1.2) rotate(180deg);
 }
 
 .pagination {
@@ -167,4 +179,7 @@ main {
     align-items: center;
     justify-content: center;
 	padding: 44px 156px 0 0;
+}
+.event-img{
+    height: 20px;
 }
