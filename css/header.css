@@ -1,16 +1,12 @@
 header {
-    height: 56px;
-    background-color: #f6fbff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 49px 0 31px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    box-shadow: 0 2px 4px rgba(50, 123, 152, 0.14);
+	background-color: #f6fbff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 20px;
+	width: 100%;
+	z-index: 2;
+	box-shadow: 0 2px 4px rgba(50, 123, 152, 0.14);
 }
 
 .user-options {
@@ -48,19 +44,25 @@ header {
     top: 7px;
 }
 
-.username {
-    font-size: 20px;
-    letter-spacing: -1px;
-    color: #1f3b51;
-    margin-left: 4px;
+.username{
+	font-size: 20px;
+	letter-spacing: -1px;
+	color: #1f3b51;
+	margin-left: 4px;
+	margin: 0 30px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+.username:hover{
+	opacity: .8;
 }
 
-.username-container {
-    margin: 0 30px;
-    display: flex;
-    align-items: center;
-}
+.username__img{
+	margin-right: 4px;
 
+}
+	
 .logout {
     text-decoration: none;
     color: #0091ff;
