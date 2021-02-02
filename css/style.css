@@ -21,67 +21,61 @@ body {
 
 .lineout {
     display: flex;
+    height: 100%;
 }
 .content{
     padding: 20px;
     width: 100%;
 
 }
-.main-table {
+.table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.main-table tr {
+.table__row {
     height: 50px;
 }
 
-.main-table th,
-.main-table td {
+.table__row:nth-child(odd) {
+    background-color: #eef4f8;
+}
+
+.table__column {
     padding: 5px;
     text-align: left;
     font-weight: 400;
     color: #1f3b51;
 }
 
-.main-table tbody tr:nth-child(2n) {
-    background-color: #eef4f8;
-}
-
-.main-table thead tr {
-    background-color: #eef4f8;
-    color: #1f3b51;
-    letter-spacing: -0.8px;
-}
-
-.main-table tr> :nth-child(1) {
+.table__checkbox {
     min-width: 30px;
     width: 3%;
     text-align: center;
 }
 
-.main-table tr> :nth-child(2) {
+.table__location {
     width: 17%;
 }
 
-.main-table tr :nth-child(3) {
+.table__date {
     width: 17%;
 }
 
-.main-table tr> :nth-child(4) {
+.table__event {
     width: 10%;
-    text-align: center;
+    
 }
 
-.main-table tr> :nth-child(5) {
+.table__videos {
     width: 10%;
 }
 
-.main-table tr> :nth-child(6) {
+.table__source{
     width: 12%;
 }
 
-.main-table tr> :nth-child(7) {
+.table__tags {
     width: 31%;
 }
 
@@ -100,19 +94,35 @@ body {
     opacity: 1;
 }
 
-
-.filter {
+.table__filter {
     padding:  0 12px;
     cursor: pointer;
 }
-.filter:hover{
+
+.table__filter:hover{
     transform: scale(1.2);
 }
-.filter--active{
+
+.table__filter--active{
     transform:rotate(180deg);
 }
-.filter--active:hover{
+
+.table__filter--active:hover{
     transform:scale(1.2) rotate(180deg);
+}
+
+.table__img-wrapper{
+
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.table__img {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
 }
 
 .pagination {
@@ -121,7 +131,7 @@ body {
     padding: 2px 0;
 }
 
-.button-export {
+.export {
     position: absolute;
     right: 36px;
     bottom: 0;
@@ -136,10 +146,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    text-decoration: none;
 }
 
-.button-export:focus {
+.export:focus {
     outline: none;
+}
+
+.export:hover{
+    opacity: 0.8;
 }
 
 .page {
@@ -174,7 +189,4 @@ body {
     align-items: center;
     justify-content: center;
 	padding: 44px 156px 0 0;
-}
-.event-img{
-    height: 20px;
 }

@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <img src="img/logo.png" alt="Logo" />
+        <a href=""><img src="img/logo.png" alt="Logo" /></a>
         <div class="user-options">
             <div class="search-bar">
                 <img src="img/search-icon.png" alt="search" />
@@ -38,134 +38,82 @@
             </a>
         </aside>
         <main class="content">
-            <table class="main-table">
-                <thead>
-                    <tr>
-                        <th><input type="checkbox" </th> <th>Location<img class="filter" src="img/filter.png"></th>
-                        <th>Date and time<img class="filter filter--active" src="img/filter.png"></th>
-                        <th>Event</th>
-                        <th>Videos</th>
-                        <th>Source</th>
-                        <th>Tags</th>
-                    </tr>
-                </thead>
+            <table class="table">
                 <tbody>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Warehouse Astarta 1</td>
-                        <td>12/09/2020 14:55:34</td>
-                        <td><img class="event-img" src="img/alarm.png"></td>
-                        <td>2/2</td>
-                        <td>Module 1</td>
-                        <td><span class="tag tag--alarm">Fire</span><span class="tag">Animals</span><span class="tag">Human</span></td>
+                    <tr class="table__row">
+                        <td class="table__column table__chekbox"><input type="checkbox"></td> 
+                        <td class="table__column table__location">Location<img class="table__filter" src="img/filter.png"></td>
+                        <td class="table__column table__date">Date and time<img class="table__filter table__filter--active" src="img/filter.png"></td>
+                        <td class="table__column table__event">Event</td>
+                        <td class="table__column table__videos">Videos</td>
+                        <td class="table__column table__source">Source</td>
+                        <td class="table__column table__tags">Tags</td>
                     </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Warehouse Astarta 1</td>
-                        <td>12/09/2020 14:55:34</td>
-                        <td><img src="img/water.png"></td>
-                        <td>2/2</td>
-                        <td>Module 1</td>
-                        <td><span class="tag">Insects</span></td>
+                    <tr class="table__row">
+                        <td class="table__column table__chekbox"><input type="checkbox"></td>
+                        <td class="table__column table__location">Warehouse Astarta 1</td>
+                        <td class="table__column table__date">12/09/2020 14:55:34</td>
+                        <td class="table__column table__event">
+                            <div class="table__img-wrapper"><img class="table__img" src="img/alarm.png"></div>
+                        </td>
+                        <td class="table__column table__videos">2/2</td>
+                        <td class="table__column table__source">Module 1</td>
+                        <td class="table__column table__tags"><span class="tag tag--alarm">Fire</span><span class="tag">Animals</span><span class="tag">Human</span></td>
                     </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Warehouse Astarta 1</td>
-                        <td>12/09/2020 14:55:34</td>
-                        <td><img src="img/term.png"></td>
-                        <td>2/2</td>
-                        <td>Module 1</td>
-                        <td><span class="tag">Insects</span></td>
+                    <tr class="table__row">
+                        <td class="table__column table__chekbox"><input type="checkbox"></td>
+                        <td class="table__column table__location">Warehouse Astarta 1</td>
+                        <td class="table__column table__date">12/09/2020 14:55:34</td>
+                        <td class="table__column table__event">
+                            <div class="table__img-wrapper"><img class="table__img" src="img/water.png"></div>
+                        </td>
+                        <td class="table__column table__videos">2/2</td>
+                        <td class="table__column table__source">Module 1</td>
+                        <td class="table__column table__tags"><span class="tag">Insects</span></td>
                     </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Warehouse Astarta 1</td>
-                        <td>12/09/2020 14:55:34</td>
-                        <td><img src="img/fire.png"></td>
-                        <td>2/2</td>
-                        <td>Module 13</td>
-                        <td><span class="tag">Insects</span><span class="tag">Animals</span></td>
+                    <tr class="table__row">
+                        <td class="table__column table__chekbox"><input type="checkbox"></td>
+                        <td class="table__column table__location">Warehouse Astarta 1</td>
+                        <td class="table__column table__date">12/09/2020 14:55:34</td>
+                        <td class="table__column table__event">
+                            <div class="table__img-wrapper"><img class="table__img" src="img/term.png"></div>
+                        </td>
+                        <td class="table__column table__videos">2/2</td>
+                        <td class="table__column table__source">Module 1</td>
+                        <td class="table__column table__tags"><span class="tag">Insects</span></td>
                     </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Warehouse Astarta 1</td>
-                        <td>12/09/2020 14:55:34</td>
-                        <td><img src="img/alarm.png"></td>
-                        <td>2/2</td>
-                        <td>Module 1456</td>
-                        <td><span class="tag">Insects</span><span class="tag">Animals</span></td>
+                    <tr class="table__row">
+                        <td class="table__column table__chekbox"><input type="checkbox"></td>
+                        <td class="table__column table__location">Warehouse Astarta 1</td>
+                        <td class="table__column table__date">12/09/2020 14:55:34</td>
+                        <td class="table__column table__event">
+                            <div class="table__img-wrapper"><img class="table__img" src="img/fire.png"></div>
+                        </td>
+                        <td class="table__column table__videos">2/2</td>
+                        <td class="table__column table__source">Module 13</td>
+                        <td class="table__column table__tags"><span class="tag">Insects</span><span class="tag">Animals</span></td>
                     </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Warehouse Astarta 1</td>
-                        <td>12/09/2020 14:55:34</td>
-                        <td><img src="img/alarm.png"></td>
-                        <td>2/2</td>
-                        <td>Module 1</td>
-                        <td><span class="tag">Insects</span><span class="tag">Animals</span></td>
+                    <tr class="table__row">
+                        <td class="table__column table__chekbox"><input type="checkbox"></td>
+                        <td class="table__column table__location">Warehouse Astarta 1</td>
+                        <td class="table__column table__date">12/09/2020 14:55:34</td>
+                        <td class="table__column table__event">
+                            <div class="table__img-wrapper"><img class="table__img" src="img/alarm.png"></div>
+                        </td>
+                        <td class="table__column table__videos">2/2</td>
+                        <td class="table__column table__source">Module 1456</td>
+                        <td class="table__column table__tags"><span class="tag">Insects</span><span class="tag">Animals</span></td>
                     </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Warehouse Astarta 1</td>
-                        <td>12/09/2020 14:55:34</td>
-                        <td><img src="img/alarm.png"></td>
-                        <td>2/2</td>
-                        <td>Module 1654</td>
-                        <td><span class="tag">Bird</span><span class="tag">Human</span></td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Warehouse Astarta 1</td>
-                        <td>12/09/2020 14:55:34</td>
-                        <td><img src="img/alarm.png"></td>
-                        <td>2/2</td>
-                        <td>Module 132</td>
-                        <td><span class="tag">Vehicle</span><span class="tag">Human</span></td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Warehouse Astarta 1</td>
-                        <td>12/09/2020 14:55:34</td>
-                        <td><img src="img/alarm.png"></td>
-                        <td>2/2</td>
-                        <td>Module 13</td>
-                        <td><span class="tag">Insects</span><span class="tag">Animals</span></td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Warehouse Astarta 1</td>
-                        <td>12/09/2020 14:55:34</td>
-                        <td><img src="img/alarm.png"></td>
-                        <td>2/2</td>
-                        <td>Module 1456</td>
-                        <td><span class="tag">Insects</span><span class="tag">Animals</span></td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Warehouse Astarta 1</td>
-                        <td>12/09/2020 14:55:34</td>
-                        <td><img src="img/water.png"></td>
-                        <td>2/2</td>
-                        <td>Module 1</td>
-                        <td><span class="tag">Insects</span><span class="tag">Animals</span></td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Warehouse Astarta 1</td>
-                        <td>12/09/2020 14:55:34</td>
-                        <td><img src="img/term.png"></td>
-                        <td>2/2</td>
-                        <td>Module 1654</td>
-                        <td><span class="tag">Bird</span><span class="tag">Human</span></td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Warehouse Astarta 1</td>
-                        <td>12/09/2020 14:55:34</td>
-                        <td><img src="img/alarm.png"></td>
-                        <td>2/2</td>
-                        <td>Module 132</td>
-                        <td><span class="tag">Vehicle</span><span class="tag">Human</span></td>
+                    <tr class="table__row">
+                        <td class="table__column table__chekbox"><input type="checkbox"></td>
+                        <td class="table__column table__location">Warehouse Astarta 1</td>
+                        <td class="table__column table__date">12/09/2020 14:55:34</td>
+                        <td class="table__column table__event">
+                            <div class="table__img-wrapper"><img class="table__img" src="img/alarm.png"></div>
+                        </td>
+                        <td class="table__column table__videos">2/2</td>
+                        <td class="table__column table__source">Module 1</td>
+                        <td class="table__column table__tags"><span class="tag">Insects</span><span class="tag">Animals</span></td>
                     </tr>
                 </tbody>
             </table>
@@ -173,19 +121,19 @@
                 <div class="pagination">
                     <span class="page">Page</span>
                     <div class="pages">
-                        <button class="pages-button" type="button"><img src="img/arrowl.svg"/></button>
-                        <button class="pages-button Sactive-page" type="button">1</button>
+                        <button class="pages-button" type="button"><img src="img/arrow-left.svg"/></button>
+                        <button class="pages-button  active-page" type="button">1</button>
                         <button class="pages-button" type="button">2</button>
                         <button class="pages-button" type="button">3</button>
                         <button class="pages-button" type="button">...</button>
                         <button class="pages-button" type="button">1276</button>
-                        <button class="pages-button" type="button"><img src="img/arrowr.svg"/></button>       
+                        <button class="pages-button" type="button"><img src="img/arrow-right.svg"/></button>       
                     </div>
                 </div>
-                <button type="button" class="button-export">
-                    <img src="img/export.png" alt="Export"/>
-                    <span>Export</span>
-                </button>
+                <a href="" class="export">
+                    <img class="export__img" src="img/export.png" alt="Export"/>
+                    Export
+                </a>
             </div>               
             </div>
             
