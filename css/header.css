@@ -1,5 +1,4 @@
 header {
-<<<<<<< HEAD
 	background-color: #f6fbff;
 	display: flex;
 	align-items: center;
@@ -8,20 +7,6 @@ header {
 	width: 100%;
 	z-index: 2;
 	box-shadow: 0 2px 4px rgba(50, 123, 152, 0.14);
-=======
-    height: 56px;
-    background-color: #f6fbff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 49px 0 31px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    box-shadow: 0 2px 4px rgba(50, 123, 152, 0.14);
->>>>>>> 505e3ff94fea2b15c5e81b255fb815a9aa667f9c
 }
 
 .user-options {
@@ -58,7 +43,7 @@ header {
     left: 3px;
     top: 7px;
 }
-<<<<<<< HEAD
+
 .username{
 	font-size: 20px;
 	letter-spacing: -1px;
@@ -78,22 +63,6 @@ header {
 
 }
 	
-=======
-
-.username {
-    font-size: 20px;
-    letter-spacing: -1px;
-    color: #1f3b51;
-    margin-left: 4px;
-}
-
-.username-container {
-    margin: 0 30px;
-    display: flex;
-    align-items: center;
-}
-
->>>>>>> 505e3ff94fea2b15c5e81b255fb815a9aa667f9c
 .logout {
     text-decoration: none;
     color: #0091ff;

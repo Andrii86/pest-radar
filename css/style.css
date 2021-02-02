@@ -94,20 +94,10 @@ body {
     letter-spacing: -0.8px;
     color: #ffffff;
 }
-<<<<<<< HEAD
+
 .tag--alarm{
     background-color: #e02020;
     opacity: 1;
-=======
-
-.alarm {
-    padding: 5px 13px;
-    margin: 0 15px 0 0;
-    border-radius: 2px;
-    background-color: #e02020;
-    letter-spacing: -0.8px;
-    color: #ffffff;
->>>>>>> 505e3ff94fea2b15c5e81b255fb815a9aa667f9c
 }
 
 
@@ -183,12 +173,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
 	padding: 44px 156px 0 0;
 }
 .event-img{
     height: 20px;
-=======
-    padding: 44px 156px 0 0;
->>>>>>> 505e3ff94fea2b15c5e81b255fb815a9aa667f9c
 }
