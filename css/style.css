@@ -28,10 +28,8 @@ body {
 
 }
 .main-table {
-
     width: 100%;
     border-collapse: collapse;
-
 }
 
 .main-table tr {
@@ -40,25 +38,20 @@ body {
 
 .main-table th,
 .main-table td {
-
     padding: 5px;
     text-align: left;
     font-weight: 400;
     color: #1f3b51;
-
 }
 
 .main-table tbody tr:nth-child(2n) {
-
     background-color: #eef4f8;
 }
 
 .main-table thead tr {
-
     background-color: #eef4f8;
     color: #1f3b51;
     letter-spacing: -0.8px;
-
 }
 
 .main-table tr> :nth-child(1) {
@@ -101,9 +94,20 @@ body {
     letter-spacing: -0.8px;
     color: #ffffff;
 }
+<<<<<<< HEAD
 .tag--alarm{
     background-color: #e02020;
     opacity: 1;
+=======
+
+.alarm {
+    padding: 5px 13px;
+    margin: 0 15px 0 0;
+    border-radius: 2px;
+    background-color: #e02020;
+    letter-spacing: -0.8px;
+    color: #ffffff;
+>>>>>>> 505e3ff94fea2b15c5e81b255fb815a9aa667f9c
 }
 
 
@@ -147,39 +151,44 @@ body {
 .button-export:focus {
     outline: none;
 }
-.page{
-	font-size: 14px;
-	font-weight: 400;
-	color: #697c8a;
+
+.page {
+    font-size: 14px;
+    font-weight: 400;
+    color: #697c8a;
 }
 
 .pages-button {
-	background-color: #ffffff;
-	border: transparent;
+    background-color: #ffffff;
+    border: transparent;
     color: #697c8a;
     cursor: pointer;
     padding: 6px 10px;
 }
 
 .pages-button img {
-	height: 10px;
+    height: 10px;
     width: 10px;
 }
 
 .active-page {
-	border-radius: 2px;
-	background-color: #697c8a;
-	border-color: transparent;
-	color: #ffffff
+    border-radius: 2px;
+    background-color: #697c8a;
+    border-color: transparent;
+    color: #ffffff
 }
 
-.table-options{
+.table-options {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
 	padding: 44px 156px 0 0;
 }
 .event-img{
     height: 20px;
+=======
+    padding: 44px 156px 0 0;
+>>>>>>> 505e3ff94fea2b15c5e81b255fb815a9aa667f9c
 }
