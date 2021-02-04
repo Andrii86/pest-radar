@@ -120,19 +120,23 @@
             </table>
             <div class="table-options">
                 <div class="pagination">
-                    <span class="pagination__page">Page</span>
-                    <div class="pagination__pages">
-                        <button class="pagination__button" type="button"><img src="img/arrow-left.svg" /></button>
+                    <span class="pagination__text">Page</span>
+                    <div class="pagination__list">
+                        <button class="pagination__button pagination__arrow" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"><g><g><path fill="currentColor" d="M4.19.08L5.5 1.498l-2.881 3.12L5.5 7.736 4.19 9.155 0 4.618z"/></g></g></svg>
+                        </button>
                         <button class="pagination__button  active-page" type="button">1</button>
                         <button class="pagination__button" type="button">2</button>
                         <button class="pagination__button" type="button">3</button>
-                        <button class="pagination__button" type="button">...</button>
+                        <span class="pagination__text">...</span>
                         <button class="pagination__button" type="button">1276</button>
-                        <button class="pagination__button" type="button"><img src="img/arrow-right.svg" /></button>
+                        <button class="pagination__button pagination__arrow" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"><g><g><path fill="currentColor" d="M2.21.08L.9 1.498l2.881 3.12L.9 7.736l1.31 1.418L6.4 4.618z"/></g></g></svg>
+                        </button>
                     </div>
                 </div>
-                <button class="button-export">
-                    <img class="button-export__icon" src="img/export.png" alt="Export" />
+                <button class="button">
+                    <img class="button__icon" src="img/export.png" alt="Export" />
                     Export
                 </button>
             </div>
