@@ -11,14 +11,14 @@
 
 <body>
     <header>
-        <a href=""><img src="img/logo.png" alt="Logo" /></a>
+        <a href="#"><img class="logo" src="img/logo.png" alt="Logo"/></a>
         <div class="user-options">
             <div class="search-bar">
-                <img src="img/search-icon.png" alt="search" />
-                <input type="search" placeholder="Search">
+                <img class="search-bar__img" src="img/search-icon.png" alt="search" />
+                <input class="search-bar__input" type="search" placeholder="Search">
             </div>
             <a href="#" class="username">
-                <img class="username__img" src="img/user-icon.png" alt="user-icon"/>
+                <img class="username__img" src="img/user-icon.png" alt="user-icon" />
                 Astarta Company
             </a>
             <a class="logout" href="#">Log out</a>
@@ -34,14 +34,14 @@
             </ul>
             <a href="#support" class="support">
                 <img src="img/Support.png" alt="Support">
-                <span>Support</span>
+                Support
             </a>
         </aside>
         <main class="content">
             <table class="table">
                 <tbody>
                     <tr class="table__row">
-                        <td class="table__column table__chekbox"><input type="checkbox"></td> 
+                        <td class="table__column table__chekbox"><input type="checkbox"></td>
                         <td class="table__column table__location">Location<img class="table__filter" src="img/filter.png"></td>
                         <td class="table__column table__date">Date and time<img class="table__filter table__filter--active" src="img/filter.png"></td>
                         <td class="table__column table__event">Event</td>
@@ -58,7 +58,8 @@
                         </td>
                         <td class="table__column table__videos">2/2</td>
                         <td class="table__column table__source">Module 1</td>
-                        <td class="table__column table__tags"><span class="tag tag--alarm">Fire</span><span class="tag">Animals</span><span class="tag">Human</span></td>
+                        <td class="table__column table__tags">
+                            <div class="tags" ><span class="tag tag--alarm">Fire</span><span class="tag">Animals</span><span class="tag">Human</span></td></div>
                     </tr>
                     <tr class="table__row">
                         <td class="table__column table__chekbox"><input type="checkbox"></td>
@@ -119,24 +120,22 @@
             </table>
             <div class="table-options">
                 <div class="pagination">
-                    <span class="page">Page</span>
-                    <div class="pages">
-                        <button class="pages-button" type="button"><img src="img/arrow-left.svg"/></button>
-                        <button class="pages-button  active-page" type="button">1</button>
-                        <button class="pages-button" type="button">2</button>
-                        <button class="pages-button" type="button">3</button>
-                        <button class="pages-button" type="button">...</button>
-                        <button class="pages-button" type="button">1276</button>
-                        <button class="pages-button" type="button"><img src="img/arrow-right.svg"/></button>       
+                    <span class="pagination__page">Page</span>
+                    <div class="pagination__pages">
+                        <button class="pagination__button" type="button"><img src="img/arrow-left.svg" /></button>
+                        <button class="pagination__button  active-page" type="button">1</button>
+                        <button class="pagination__button" type="button">2</button>
+                        <button class="pagination__button" type="button">3</button>
+                        <button class="pagination__button" type="button">...</button>
+                        <button class="pagination__button" type="button">1276</button>
+                        <button class="pagination__button" type="button"><img src="img/arrow-right.svg" /></button>
                     </div>
                 </div>
-                <a href="" class="export">
-                    <img class="export__img" src="img/export.png" alt="Export"/>
+                <button class="button-export">
+                    <img class="button-export__icon" src="img/export.png" alt="Export" />
                     Export
-                </a>
-            </div>               
+                </button>
             </div>
-            
         </main>
     </div>
 </body>
