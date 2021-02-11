@@ -1,8 +1,3 @@
-@font-face {
-    font-family: "SF Compact Display";
-    src: url("../fonts/SFCompactDisplay-Regular.ttf");
-}
-
 * {
     box-sizing: border-box;
 }
@@ -29,19 +24,18 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
 }
+
+
 .table {
     width: 100%;
     border-collapse: collapse;
-}
-
-.table__row {
-    height: 50px;
-}
-
-.table__row:nth-child(odd) {
-    background-color: #eef4f8;
+    &__row {
+         height: 50px;
+         &:nth-child(odd) {
+            background-color: #eef4f8;
+         }
+    }
 }
 
 .table__column {
@@ -88,14 +82,20 @@ body {
     background-color: rgba(31, 59, 81, 0.67);
     letter-spacing: -0.8px;
     color: #ffffff;
+    &--alarm{
+        background-color: #e02020;
+        opacity: 1;
+    }
 }
 .tags{
     display: inline-block;
 }
 
-.tag--alarm{
-    background-color: #e02020;
-    opacity: 1;
+.tags {
+    height: 100px;
+    .tag {
+        left: 20px;
+    }
 }
 
 .table__filter {
