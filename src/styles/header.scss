@@ -1,19 +1,22 @@
 header {
-	background-color: #f6fbff;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 10px 20px;
-	width: 100%;
-	z-index: 2;
-	box-shadow: 0 2px 4px rgba(50, 123, 152, 0.14);
+    background-color: #f6fbff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0 2px 4px rgba(50, 123, 152, 0.14);
 }
+
 .logo {
     transition: opacity .3s;
+
+    &:hover {
+        opacity: 0.7;
+    }
 }
-.logo:hover{
-    opacity: 0.7;
-}
+
 .user-options {
     display: flex;
     align-items: center;
@@ -22,65 +25,65 @@ header {
 
 .search-bar {
     position: relative;
+
+    &__input {
+        height: 37px;
+        width: 343px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgba(171, 171, 171, 0.1);
+        padding: 5px 5px 5px 30px;
+        color: #1f3b51;
+        font-size: 17px;
+        letter-spacing: -0.41px;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: rgba(60, 60, 67, 0.6);
+        }
+    }
+
+    &__img {
+        display: block;
+        position: absolute;
+        left: 3px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
-.search-bar__input {
-    height: 37px;
-    width: 343px;
-    border-radius: 10px;
-    border: none;
-    background-color: rgba(171, 171, 171, 0.1);
-    padding: 5px 5px 5px 30px;
+.username {
+    font-size: 20px;
+    letter-spacing: -1px;
     color: #1f3b51;
-    font-size: 17px;
-    letter-spacing: -0.41px;
+    margin-left: 4px;
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    &:hover {
+        opacity: .8;
+    }
+
+    &__img {
+        margin-right: 6px;
+        display: block;
+        width: 18px;
+        height: 20px;
+    }
 }
 
-.search-bar__input:focus {
-    outline: none;
-}
-
-.search-bar__input::placeholder {
-    color: rgba(60, 60, 67, 0.6);
-}
-
-.search-bar__img {
-    display: block;
-    position: absolute;
-    left: 3px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.username{
-	font-size: 20px;
-	letter-spacing: -1px;
-	color: #1f3b51;
-	margin-left: 4px;
-	margin: 0 30px;
-	display: flex;
-	align-items: center;
-	text-decoration: none;
-}
-.username:hover{
-	opacity: .8;
-}
-
-.username__img{
-	margin-right: 6px;
-    display: block;
-    width: 18px;
-    height: 20px;
-
-}
-	
 .logout {
     text-decoration: none;
     color: #0091ff;
     font-size: 20px;
     letter-spacing: -1px;
-}
 
-.logout:hover {
-    opacity: 0.7;
+    &:hover {
+        opacity: 0.7;
+    }
 }
